@@ -1,0 +1,76 @@
+:root{
+    --primary-color: #345285;
+}
+html {
+    font-size: 10px;
+    
+  }
+  
+  body {
+    font-size: 1.6rem; /* 16px */
+    margin-top: 0;
+  }
+
+  .nav-link{
+    font-size: 2rem;
+}
+
+.img-logo{
+    width: 30rem;
+}
+.color-primary{
+    background-color: var(--primary-color) !important;
+}
+
+/* funciona para dispositivos con ancho mayor a 992 */
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        position: relative;}
+        .d-block, .w-100{
+            height: 90vh;
+        }
+}
+/* Funciona para dispositivos con ancho menor a 992 */
+@media screen and (max-width: 991px) {
+    .navbar-nav, .navbar-brand {
+        float: left;
+        margin: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        position: relative;
+    }
+    .navbar-nav{
+        align-items: center;
+    }
+    .d-block, .w-100{
+        height: 50vh;
+    }
+}
+.transparencia{
+    filter: brightness(1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img-slider {
+    width: 100vw !important;
+    
+}
+.prueba{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt-white{
+    color: white;}
